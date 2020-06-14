@@ -90,7 +90,12 @@ class Tokenizer(ATokenizer):
         """
         return
 
-    def tokenize(self, text):
-        raise NotImplementedError('Default tokenizer method not implemented')
+    def tokenize(text):
+        #raise NotImplementedError('Default tokenizer method not implemented')
+        a = text.split()
+        return [*a,"\n"]
 
+    name = input ("Enter Name : ")
+    res = tokenize(name)
+    print(res)
 
